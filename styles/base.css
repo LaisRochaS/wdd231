@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #204060;
+  color: white;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  width: 50px;
+  border-radius: 50%;
+}
+nav {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+}
+nav a {
+  color: white;
+  padding: 1em;
+  text-decoration: none;
+  display: block;
+}
+nav a:hover {
+  background-color: #444;
+}
+main {
+  padding: 1em;
+}
+.coursework, .location, .certificate {
+  margin-bottom: 2em;
+}
+.filters button {
+  margin: 0.5em;
+}
+.course-button {
+  display: block;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  background-color: #8B4513;
+  color: white;
+  border: none;
+}
+footer {
+  background-color: #204060;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+@media (min-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

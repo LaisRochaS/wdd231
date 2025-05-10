@@ -1,0 +1,61 @@
+/* styles/large.css */
+@media screen and (min-width: 768px) {
+  nav ul {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #menuButton {
+    display: none;
+  }
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+header img {
+  width: 90px;
+  height: auto;
+  border-radius: 30%;
+}
+
+.name {
+  font-size: 3rem;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  align-items: center;
+}
+  .box-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #coursesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  #coursesContainer button {
+    width: 400px;
+  }
+ footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #204060;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+ }
+
