@@ -25,7 +25,6 @@ header img {
   width: 90px;
   height: auto;
   border-radius: 30%;
-  align-items: left;
 }
 
 .name {
@@ -37,7 +36,6 @@ header img {
 
 .blue-bg {
   background-color: #003366;
-  position: center;
 
 }
 .couse-box {
@@ -57,7 +55,6 @@ h2 {
 }
 .black-bg {
   background-color: #222;
-  position: center;
   padding: 1px;
 }
 
