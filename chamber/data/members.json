@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Sunrise Bakery",
+    "address": "123 Main St, Your City",
+    "phone": "555-1234",
+    "website": "https://sunrisebakery.com",
+    "image": "bakerylogo.png",
+    "membership": 3,
+    "description": "Fresh baked goods daily."
+  },
+  {
+    "name": "GreenTech Solutions",
+    "address": "456 Elm St, Your City",
+    "phone": "555-5678",
+    "website": "https://greentech.com",
+    "image": "green.png",
+    "membership": 2,
+    "description": "Eco-friendly IT solutions."
+  },
+  {
+    "name": "Local Gym",
+    "address": "789 Oak St, Your City",
+    "phone": "555-2468",
+    "website": "https://localgym.com",
+    "image": "gym.png",
+    "membership": 1,
+    "description": "Get fit with us."
+  }
+]
