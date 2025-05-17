@@ -1,21 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
   const membersContainer = document.getElementById("members");
+  let memberData = [];
 
   async function fetchMembers() {
     const response = await fetch("data/members.json");
-    const members = await response.json();
-    displayMembers(members);
+    memberData = await response.json();
+    displayMembers("grid"); 
   }
 
-  function displayMembers(members) {
+  function displayMembers(view) {
     membersContainer.innerHTML = "";
+    membersContainer.className = `members-container ${view}`;
 
-    members.forEach(member => {
-      const card = document.createElement("section");
-      card.classList.add("member-card");
+    memberData.forEach(member => {
+      const section = document.createElement("section");
+      section.classList.add("member-card");
 
-      card.innerHTML = `
-        <img src="images/${member.image}" alt="${member.name} logo">
+      section.innerHTML = `
+        ${view === "grid" ? `<img src="images/${member.image}" alt="${member.name} logo">` : ""}
         <h3>${member.name}</h3>
         <p>${member.address}</p>
         <p>${member.phone}</p>
@@ -23,23 +25,16 @@ document.addEventListener("DOMContentLoaded", () => {
         <p class="membership-level">Membership Level: ${["", "Member", "Silver", "Gold"][member.membership]}</p>
       `;
 
-      membersContainer.appendChild(card);
+      membersContainer.appendChild(section);
     });
   }
 
-  document.getElementById("grid").addEventListener("click", () => {
-    membersContainer.classList.add("grid");
-    membersContainer.classList.remove("list");
-  });
+  document.getElementById("grid").addEventListener("click", () => displayMembers("grid"));
+  document.getElementById("list").addEventListener("click", () => displayMembers("list"));
 
-  document.getElementById("list").addEventListener("click", () => {
-    membersContainer.classList.add("list");
-    membersContainer.classList.remove("grid");
-  });
-
-  // Footer script
   document.getElementById("year").textContent = new Date().getFullYear();
   document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
 
   fetchMembers();
 });
+
