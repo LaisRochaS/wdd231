@@ -3,11 +3,21 @@ body {
   margin: 0;
   padding: 0;
 }
-
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    align-items: center;
+    padding: 20px;
+    background-color: #004080;
+}
 header, nav, footer {
   background-color: #004080;
   color: white;
   padding: 1rem;
+}
+.logo-box img {
+    width: 150px; 
+    height: auto;
 }
 
 nav ul {
@@ -60,4 +70,15 @@ button {
 footer {
   text-align: center;
   font-size: 0.9rem;
+}
+footer .sociallinks {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+footer .sociallinks a img {
+    width: 40px;
+    height: 40px; 
+    object-fit: contain;
 }

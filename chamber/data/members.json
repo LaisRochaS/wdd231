@@ -25,5 +25,45 @@
     "image": "gym.png",
     "membership": 1,
     "description": "Get fit with us."
+  },
+   {
+    "name": "Bloom Floral Designs",
+    "address": "321 Blossom Rd, Sunnyville, CA 90210",
+    "phone": "555-234-5678",
+    "website": "https://bloomflorals.example.com",
+    "image": "floral.png",
+    "membership": 2,
+    "description": "Custom floral arrangements for events, weddings, and everyday joy.",
+    "category": "Retail"
+  },
+  {
+    "name": "Evergreen Landscaping",
+    "address": "654 Garden Ln, Sunnyville, CA 90210",
+    "phone": "555-789-4321",
+    "website": "https://evergreenlandscaping.example.com",
+    "image": "land.png",
+    "membership": 1,
+    "description": "Professional landscape design, maintenance, and tree services.",
+    "category": "Home & Garden"
+  },
+  {
+    "name": "Vision Marketing Co.",
+    "address": "111 Ad St, Sunnyville, CA 90210",
+    "phone": "555-333-1212",
+    "website": "https://visionmarketing.example.com",
+    "image": "vision.png",
+    "membership": 3,
+    "description": "Award-winning digital marketing and branding strategies for local businesses.",
+    "category": "Marketing & Advertising"
+  },
+  {
+    "name": "Sunnyville Community Bank",
+    "address": "222 Finance Way, Sunnyville, CA 90210",
+    "phone": "555-777-8888",
+    "website": "https://sunnyvillebank.example.com",
+    "image": "bank.png",
+    "membership": 2,
+    "description": "Your trusted partner for loans, savings, and financial guidance.",
+    "category": "Finance"
   }
 ]
