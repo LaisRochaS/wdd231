@@ -1,31 +1,41 @@
-const newLocal = 'f801ca2a97c4a75fa9a2088bfe604740';
-const city = 'Winter Garden, FL, US';
-const units = 'imperial'; 
-
 async function fetchWeather() {
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${apiKey}`;
-  const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${units}&appid=${apiKey}`;
-  
-  const [weatherResponse, forecastResponse] = await Promise.all([
-    fetch(url),
-    fetch(forecastUrl)
-  ]);
+  const apiKey = 'f801ca2a97c4a75fa9a2088bfe604740';
+  const city = 'Winter Garden, FL, US';
+  const units = 'imperial';
 
-  const weatherData = await weatherResponse.json();
-  const forecastData = await forecastResponse.json();
+  try {
+    const weatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${apiKey}`;
+    const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${units}&appid=${apiKey}`;
+    
+    const [weatherResponse, forecastResponse] = await Promise.all([
+      fetch(weatherURL),
+      fetch(forecastURL)
+    ]);
+    
+    if (!weatherResponse.ok || !forecastResponse.ok) throw new Error("Weather API error");
 
-  document.getElementById('current-temp').textContent = `Temperature: ${weatherData.main.temp}°F`;
-  document.getElementById('weather-desc').textContent = `Conditions: ${weatherData.weather[0].description}`;
+    const weather = await weatherResponse.json();
+    const forecast = await forecastResponse.json();
 
-  const forecastContainer = document.getElementById('forecast');
-  forecastContainer.innerHTML = '';
+    document.getElementById('current-temp').textContent = `Temperature: ${weather.main.temp}°F`;
+    document.getElementById('weather-desc').textContent = `Conditions: ${weather.weather[0].description}`;
 
-  const dailyForecasts = forecastData.list.filter(f => f.dt_txt.includes("12:00:00")).slice(0, 3);
-  dailyForecasts.forEach(day => {
-    const div = document.createElement('div');
-    div.textContent = `${new Date(day.dt_txt).toLocaleDateString()}: ${day.main.temp}°F`;
-    forecastContainer.appendChild(div);
-  });
+    const forecastContainer = document.getElementById('forecast');
+    forecastContainer.innerHTML = '';
+    const forecastItems = forecast.list.filter(f => f.dt_txt.includes("12:00:00")).slice(0, 3);
+
+    forecastItems.forEach(item => {
+      const div = document.createElement('div');
+      const date = new Date(item.dt_txt);
+      div.textContent = `${date.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' })}: ${item.main.temp}°F`;
+      forecastContainer.appendChild(div);
+    });
+
+  } catch (error) {
+    console.error('Weather fetch error:', error);
+    document.getElementById('weather-desc').textContent = "Unable to load weather.";
+  }
 }
 
 fetchWeather();
+
