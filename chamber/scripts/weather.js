@@ -1,4 +1,4 @@
-const apiKey = 'YOUR_API_KEY';
+const newLocal = 'YOUR_API_KEY';
 const city = 'Winter Garden, FL';
 const units = 'imperial'; 
 
