@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("grid").addEventListener("click", () => displayMembers("grid"));
   document.getElementById("list").addEventListener("click", () => displayMembers("list"));
 
-  document.getElementById("year").textContent = new Date().getFullYear();
-  document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
 
   fetchMembers();
 });
