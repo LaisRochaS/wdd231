@@ -15,9 +15,9 @@
   <meta property="og:locale" content="en_US" >
   <link rel="icon" href="images/logo.png" type="image/x-icon" >
   <link rel="stylesheet" href="styles/directory.css" >
-  <script src="scripts/directory.js" defer></script>
-  <script src="scripts/weather.js" defer></script>
-  <script src="scripts/spotlights.js" defer></script>
+ <script src="scripts/directory.js" defer></script>
+ <script src="scripts/weather.js" defer></script>
+ <script src="scripts/spotlights.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -38,9 +38,13 @@
   <h1>Winter Garden Chamber of Commerce</h1>
 
   <section class="hero">
-      <img src="images/logo.png" alt="Welcome to Winter Garden Chamber of Commerce" />
-      <a href="join.html" class="cta-button">Join the Chamber</a>
-    </section>
+  <picture>
+    <source src="images/hero-large.avif" media="(min-width: 768px)">
+    <img src="images/hero-small.avif" alt="Downtown Winter Garden community" class="hero-img">
+  </picture>
+  <a href="join.html" class="cta-button">Join the Chamber</a>
+</section>
+
 
     <section class="events">
       <h2>Upcoming Events</h2>
@@ -52,10 +56,10 @@
     </section>
 
     <section id="weather">
-      <h2>Current Weather</h2>
-      <p id="current-temp"></p>
-      <p id="weather-desc"></p>
-      <div id="forecast"></div>
+  <h2>Current Weather</h2>
+  <p id="current-temp"></p>
+  <p id="weather-desc"></p>
+  <div id="forecast"></div>
     </section>
 
     <section id="spotlights">
@@ -80,5 +84,7 @@
     <p>info@wintergardenchamber.com</p>
     <p>&copy; <span id="year"></span> | Lais Watson | WDD 231 | <span id="lastModified"></span></p>
   </footer>
+  </main>
 </body>
 </html>
+

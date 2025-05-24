@@ -1,5 +1,5 @@
-const newLocal = 'YOUR_API_KEY';
-const city = 'Winter Garden, FL';
+const newLocal = 'f801ca2a97c4a75fa9a2088bfe604740';
+const city = 'Winter Garden, FL, US';
 const units = 'imperial'; 
 
 async function fetchWeather() {

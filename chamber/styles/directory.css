@@ -19,10 +19,38 @@ header, nav, footer {
     width: 150px; 
     height: auto;
 }
-.hero img {
-    width: 10%;
-    height: auto;
+.hero {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
 }
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.cta-button {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007B9E;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #005f75;
+}
+
 nav ul {
   display: flex;
   gap: 1rem;
