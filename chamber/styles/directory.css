@@ -19,7 +19,10 @@ header, nav, footer {
     width: 150px; 
     height: auto;
 }
-
+.hero img {
+    width: 10%;
+    height: auto;
+}
 nav ul {
   display: flex;
   gap: 1rem;

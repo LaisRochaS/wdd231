@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta name="description" content="Business directory for Winter Garden Chamber of Commerce" >
+  <meta name="author" content="Lais Watson" >
+  <title>Winter Garden Chamber - Directory</title>
+  <link rel="icon" href="images/logo.png" type="image/x-icon" >
+  <link rel="stylesheet" href="styles/directory.css" >
+  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlights.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/logo.png" alt="Welcome to Winter Garden Chamber of Commerce" />
+      <a href="join.html" class="cta-button">Join the Chamber</a>
+    </section>
+
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li><strong>May 25:</strong> Spring Business Expo</li>
+        <li><strong>May 28:</strong> Community Picnic</li>
+        <li><strong>June 1:</strong> Member Networking Breakfast</li>
+      </ul>
+    </section>
+
+    <section id="weather">
+      <h2>Current Weather</h2>
+      <p id="current-temp"></p>
+      <p id="weather-desc"></p>
+      <div id="forecast"></div>
+    </section>
+
+    <section id="spotlights">
+      <h2>Member Spotlights</h2>
+      <div class="spotlight-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/face.webp" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/x.webp" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/insta.webp" alt="Instagram">
+            </a>
+        </nav>
+        <p>Contact us: (255) 123 4567</p>
+    <p>info@wintergardenchamber.com</p>
+    <p>&copy; <span id="year"></span> | Lais Watson | WDD 231 | <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
