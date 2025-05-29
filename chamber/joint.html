@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta name="description" content="Join Page for Winter Garden Chamber of Commerce" >
+  <meta name="author" content="Lais Watson" >
+  <title>Winter Garden Chamber - Home</title>
+  <link rel="icon" href="images/logo.png" type="image/x-icon" >
+  <meta property="og:title" content="Winter Garden Chamber of Commerce - Home Page" >
+  <meta property="og:description" content="Connect with local businesses in Winter Garden." >
+  <meta property="og:image" content="https://laisrochas.github.io/wdd231/chamber/images/logo.jpg" >
+  <meta property="og:url" content="https://laisrochas.github.io/wdd231/chamber/directory.html" >
+  <meta property="og:type" content="website" >
+  <meta property="og:locale" content="en_US" >
+  <link rel="stylesheet" href="styles/directory.css" >
+  <script src="scripts/spotlights.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <h1>Winter Garden Chamber of Commerce - Member Directory</h1>
+    <section class="form-section">
+      <form method="get" action="thankyou.html">
+        <label>
+          First Name:
+          <input type="text" name="firstName" required title="First Name" autocomplete="given-name" />
+        </label><br><br>
+
+        <label>
+          Last Name:
+          <input type="text" name="lastName" required title="Last Name" autocomplete="family-name" />
+        </label><br><br>
+
+        <label>
+          Organization Title:
+          <input type="text" name="orgTitle" title="Your title in the organization" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" />
+        </label><br><br>
+
+        <label>
+          Email:
+          <input type="email" name="email" required title="Email address" autocomplete="email" placeholder="example@email.com" />
+        </label><br><br>
+
+        <label>
+          Mobile Phone:
+          <input type="tel" name="phone" required title="Mobile phone number" autocomplete="tel" />
+        </label><br><br>
+
+        <label>
+          Organization Name:
+          <input type="text" name="organization" required title="Business or Organization Name" autocomplete="organization" />
+        </label><br><br>
+
+        <label>
+          Membership Level:
+          <select name="membership">
+            <option value="np">NP Membership (Free)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label><br><br>
+
+        <label>
+          Business Description:
+          <textarea name="description" title="Tell us about your organization"></textarea>
+        </label><br><br>
+
+        <input type="hidden" name="timestamp" id="timestamp" />
+
+        <label>
+          <input type="submit" value="Apply for Membership" />
+        </label>
+      </form>
+    </section>
+
+    <section class="membership-cards">
+      <!-- Cards -->
+      <div class="card">
+        <h3>NP Membership</h3>
+        <p>No cost for nonprofit organizations.</p>
+        <a href="#" onclick="showModal('npModal')">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>Bronze Membership</h3>
+        <p>Entry-level benefits and directory listing.</p>
+        <a href="#" onclick="showModal('bronzeModal')">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>Silver Membership</h3>
+        <p>Event discounts and spotlight promotions.</p>
+        <a href="#" onclick="showModal('silverModal')">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>Gold Membership</h3>
+        <p>Top-tier marketing and training access.</p>
+        <a href="#" onclick="showModal('goldModal')">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="npModal" class="modal"><div class="modal-content"><span class="close" onclick="hideModal('npModal')">&times;</span><h3>NP Membership Benefits</h3><ul><li>Free Directory Listing</li><li>Community Events</li></ul></div></div>
+    <div id="bronzeModal" class="modal"><div class="modal-content"><span class="close" onclick="hideModal('bronzeModal')">&times;</span><h3>Bronze Membership Benefits</h3><ul><li>All NP Benefits</li><li>Basic Ads</li></ul></div></div>
+    <div id="silverModal" class="modal"><div class="modal-content"><span class="close" onclick="hideModal('silverModal')">&times;</span><h3>Silver Membership Benefits</h3><ul><li>All Bronze Benefits</li><li>Event Discounts</li></ul></div></div>
+    <div id="goldModal" class="modal"><div class="modal-content"><span class="close" onclick="hideModal('goldModal')">&times;</span><h3>Gold Membership Benefits</h3><ul><li>All Silver Benefits</li><li>Spotlight Promotions</li><li>Training Access</li></ul></div></div>
+  </main>
+
+  <footer>
+    <nav class="sociallinks">
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+        <img src="images/face.webp" alt="Facebook logo" />
+      </a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <img src="images/x.webp" alt="Twitter logo" />
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <img src="images/insta.webp" alt="Instagram logo" />
+      </a>
+    </nav>
+    <p>Contact us: (255) 123-4567</p>
+    <p>info@wintergardenchamber.com</p>
+    <p>&copy; <span id="year"></span> | Lais Watson | WDD 231 | <span id="lastModified"></span></p>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+    <script src="js/join.js"></script>
+  </footer>
+</body>
+</html>

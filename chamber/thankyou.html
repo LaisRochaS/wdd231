@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta name="description" content="Thank you Page for Winter Garden Chamber of Commerce" >
+  <meta name="author" content="Lais Watson" >
+  <title>Winter Garden Chamber - Thank you</title>
+  <link rel="icon" href="images/logo.png" type="image/x-icon" >
+  <meta property="og:title" content="Winter Garden Chamber of Commerce - Home Page" >
+  <meta property="og:description" content="Connect with local businesses in Winter Garden." >
+  <meta property="og:image" content="https://laisrochas.github.io/wdd231/chamber/images/logo.jpg" >
+  <meta property="og:url" content="https://laisrochas.github.io/wdd231/chamber/directory.html" >
+  <meta property="og:type" content="website" >
+  <meta property="og:locale" content="en_US" >
+  <link rel="stylesheet" href="styles/directory.css" >
+  <script src="scripts/spotlights.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <h1>Winter Garden Chamber of Commerce - Member Directory</h1>
+    <div class="confirmation">
+      <h2>Submission Details</h2>
+      <p id="output"></p>
+    </div>
+  </main>
+  <footer>
+    <nav class="sociallinks">
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+        <img src="images/face.webp" alt="Facebook logo" />
+      </a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <img src="images/x.webp" alt="Twitter logo" />
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <img src="images/insta.webp" alt="Instagram logo" />
+      </a>
+    </nav>
+    <p>Contact us: (255) 123-4567</p>
+    <p>info@wintergardenchamber.com</p>
+    <p>&copy; <span id="year"></span> | Lais Watson | WDD 231 | <span id="lastModified"></span></p>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+    <script src="js/thankyou.js"></script>
+  </footer>
+</body>
+</html>
+
