@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 async function loadCards() {
-  const response = await fetch("data/discovery.json");
+  const response = await fetch("data/discover.json");
   const data = await response.json();
   const container = document.getElementById("card-container");
 
