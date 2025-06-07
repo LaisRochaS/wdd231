@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Downtown Winter Garden",
+    "image": "./images/winter.jpg",
+    "address": "104 S Lakeview Ave, Winter Garden, FL",
+    "description": "Historic charm, unique shops, restaurants, and a thriving community center."
+  },
+  {
+    "name": "West Orange Trail",
+    "image": "./images/west.jpg",
+    "address": "501 Crown Point Cross Rd, Winter Garden, FL",
+    "description": "A 22-mile long multi-use trail ideal for biking, jogging, and walking."
+  }
+
+,
+  {
+    "name": "Winter Garden Farmers Market",
+    "image": "./images/farmer.jpg",
+    "address": "104 S Lakeview Ave, Winter Garden, FL",
+    "description": "A vibrant market featuring local produce, crafts, and live music every Saturday."
+  },
+  {
+    "name": "Garden Theatre",
+    "image": "./images/teather.jpg",
+    "address": "160 W Plant St, Winter Garden, FL",
+    "description": "A historic theatre offering a variety of performances and films in a charming setting."
+  },
+  {
+    "name": "Plant Street Market",
+    "image": "./images/plant.jpg",
+    "address": "426 W Plant St, Winter Garden, FL",
+    "description": "A marketplace with local vendors, food stalls, and craft breweries."
+  },
+  {
+    "name": "Lake Apopka Wildlife Drive",
+    "image": "./images/lake.jpg",
+    "address": "2850 Lust Rd, Apopka, FL",
+    "description": "A scenic drive through wetlands with opportunities for wildlife viewing."
+  },
+  {
+    "name": "Winter Garden Village at Fowler Groves",
+    "image": "./images/village.jpg",
+    "address": "3311 Daniels Rd, Winter Garden, FL",
+    "description": "An outdoor shopping center with a variety of stores and restaurants."
+  },
+  {
+    "name": "Oakland Nature Preserve",
+    "image": "./images/preserve.jpg",
+    "address": "744 McKey St, Oakland, FL",
+    "description": "A nature preserve with trails and educational programs focused on local ecology."
+  }
+]
