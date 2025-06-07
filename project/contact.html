@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="Lais Watson" />
+  <meta name="description" content="Contact Winter Trails for questions, suggestions, or support." />
+  <title>Contact Us - Winter Trails</title>
+  <link rel="stylesheet" href="styles/style.css"/>
+  <script src="scripts/site.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <h1>Winter Trails</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="trails.html">Trails</a></li>
+        <li><a href="gear.html">Gear</a></li>
+        <li><a href="safety.html">Safety</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <p>Have a question or suggestion? We'd love to hear from you.</p>
+      
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required />
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+        
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> 🌲 Lais Watson | Florida, United States</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
