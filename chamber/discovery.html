@@ -31,9 +31,21 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Lais Watson | WDD 231</p>
-    <p id="lastModified"></p>
+   <footer>
+    <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/face.webp" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/x.webp" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/insta.webp" alt="Instagram">
+            </a>
+        </nav>
+        <p>Contact us: (255) 123 4567</p>
+    <p>info@wintergardenchamber.com</p>
+    <p>&copy; <span id="year"></span> | Lais Watson | WDD 231 | <span id="lastModified"></span></p>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
       document.getElementById("lastModified").textContent = document.lastModified;
