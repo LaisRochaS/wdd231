@@ -28,7 +28,7 @@
     "length": "2.0 miles",
     "difficulty": "Easy",
     "location": "Minnesota",
-    "image": "images/froz.webp",
+    "image": "images/frozz.webp",
     "description": "A serene trail encircling a frozen lake."
   },
   {
@@ -52,7 +52,7 @@
         "length": "3.5 miles",
         "difficulty": "Moderate",
         "location": "Montana",
-        "image": "images/glacier.jpg",
+        "image": "images/glacier.webp",
         "description": "Trail offering stunning views of glacial landscapes."
     },
     {
@@ -60,7 +60,7 @@
         "length": "2.8 miles",
         "difficulty": "Hard",
         "location": "Wyoming",
-        "image": "images/snowshoe.jpg",
+        "image": "images/pass.webp",
         "description": "Challenging trail perfect for snowshoeing adventures."
     }  ,         
     {
@@ -68,7 +68,7 @@
         "length": "3.0 miles",
         "difficulty": "Easy",
         "location": "Idaho",
-        "image": "images/frosty.jpg",
+        "image": "images/frosty-mountain-1.webp",
         "description": "Gentle walk through frosty pine forests."
     },
     {
@@ -76,7 +76,7 @@
         "length": "4.5 miles",
         "difficulty": "Moderate",
         "location": "Washington",
-        "image": "images/icicle.jpg",
+        "image": "images/tr.webp",
         "description": "Loop trail with views of icicle formations."
     } ,  
     {
@@ -84,7 +84,7 @@
         "length": "2.2 miles",
         "difficulty": "Easy",
         "location": "Alaska",
-        "image": "images/snowfall.jpg",
+        "image": "images/albeta.webp",
         "description": "A peaceful trail through snowy landscapes."
     },
     {
@@ -92,7 +92,7 @@
         "length": "3.6 miles",
         "difficulty": "Moderate",
         "location": "Maine",
-        "image": "images/winter.jpg",
+        "image": "images/path.webp",
         "description": "A magical path through a winter wonderland."
     } , 
     {
@@ -100,7 +100,7 @@
         "length": "4.0 miles",
         "difficulty": "Hard",
         "location": "Alberta, Canada",
-        "image": "images/frostbite.jpg",
+        "image": "images/ga.webp",
         "description": "A challenging trail with icy conditions."
     },
     {
@@ -108,7 +108,7 @@
         "length": "5.5 miles",
         "difficulty": "Hard",
         "location": "British Columbia, Canada",
-        "image": "images/snowysummit.jpg",
+        "image": "images/frio.webp",
         "description": "A strenuous hike to a snowy summit with panoramic views."
     } ,
     {
@@ -116,7 +116,7 @@
         "length": "3.2 miles",
         "difficulty": "Easy",
         "location": "Nova Scotia, Canada",
-        "image": "images/chillbreeze.jpg",
+        "image": "images/cool.jpg",
         "description": "A relaxing trail with gentle breezes and snowy scenery."
     },
     {
@@ -124,7 +124,7 @@
         "length": "2.9 miles",
         "difficulty": "Moderate",
         "location": "Quebec, Canada",
-        "image": "images/snowypines.jpg",
+        "image": "images/pines.jpg",
         "description": "A loop trail through snow-covered pine forests."
     },
     {
@@ -132,7 +132,7 @@
         "length": "4.8 miles",
         "difficulty": "Hard",
         "location": "Yukon, Canada",
-        "image": "images/glacial.jpg",
+        "image": "images/glacier.webp",
         "description": "A rugged trail with views of ancient glaciers."
     }
 ]
