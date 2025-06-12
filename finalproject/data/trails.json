@@ -1,0 +1,138 @@
+[
+  {
+    "name": "Snowy Ridge Loop",
+    "length": "2.5 miles",
+    "difficulty": "Moderate",
+    "location": "Colorado",
+    "image": "images/snowy.jpg",
+    "description": "Scenic alpine loop through snowy pine forests."
+  },
+  {
+    "name": "Evergreen Climb",
+    "length": "3.8 miles",
+    "difficulty": "Hard",
+    "location": "Utah",
+    "image": "images/evergreen.webp",
+    "description": "Uphill challenge with panoramic views of snowy peaks."
+  },
+  {
+    "name": "Crystal Meadow Walk",
+    "length": "1.2 miles",
+    "difficulty": "Easy",
+    "location": "Vermont",
+    "image": "images/crystal.jpg",
+    "description": "Flat, open trail through sparkling meadows."
+  },
+  {
+    "name": "Frozen Lake Path",
+    "length": "2.0 miles",
+    "difficulty": "Easy",
+    "location": "Minnesota",
+    "image": "images/froz.webp",
+    "description": "A serene trail encircling a frozen lake."
+  },
+  {
+    "name": "Pine Hollow Trail",
+    "length": "4.1 miles",
+    "difficulty": "Moderate",
+    "location": "Oregon",
+    "image": "images/pine.jpg",
+    "description": "Winding trail through dense pine forests."
+  },
+  {
+    "name": "Whitecap Summit",
+    "length": "5.0 miles",
+    "difficulty": "Hard",
+    "location": "New Hampshire",
+    "image": "images/white.jpg",
+    "description": "Summit hike with breathtaking winter vistas."
+  },
+    {
+        "name": "Glacier View Trail",
+        "length": "3.5 miles",
+        "difficulty": "Moderate",
+        "location": "Montana",
+        "image": "images/glacier.jpg",
+        "description": "Trail offering stunning views of glacial landscapes."
+    },
+    {
+        "name": "Snowshoe Pass",
+        "length": "2.8 miles",
+        "difficulty": "Hard",
+        "location": "Wyoming",
+        "image": "images/snowshoe.jpg",
+        "description": "Challenging trail perfect for snowshoeing adventures."
+    }  ,         
+    {
+        "name": "Frosty Pines Trail",
+        "length": "3.0 miles",
+        "difficulty": "Easy",
+        "location": "Idaho",
+        "image": "images/frosty.jpg",
+        "description": "Gentle walk through frosty pine forests."
+    },
+    {
+        "name": "Icicle Ridge Loop",
+        "length": "4.5 miles",
+        "difficulty": "Moderate",
+        "location": "Washington",
+        "image": "images/icicle.jpg",
+        "description": "Loop trail with views of icicle formations."
+    } ,  
+    {
+        "name": "Snowfall Trail",
+        "length": "2.2 miles",
+        "difficulty": "Easy",
+        "location": "Alaska",
+        "image": "images/snowfall.jpg",
+        "description": "A peaceful trail through snowy landscapes."
+    },
+    {
+        "name": "Winter Wonderland Path",
+        "length": "3.6 miles",
+        "difficulty": "Moderate",
+        "location": "Maine",
+        "image": "images/winter.jpg",
+        "description": "A magical path through a winter wonderland."
+    } , 
+    {
+        "name": "Frostbite Trail",
+        "length": "4.0 miles",
+        "difficulty": "Hard",
+        "location": "Alberta, Canada",
+        "image": "images/frostbite.jpg",
+        "description": "A challenging trail with icy conditions."
+    },
+    {
+        "name": "Snowy Summit Trail",
+        "length": "5.5 miles",
+        "difficulty": "Hard",
+        "location": "British Columbia, Canada",
+        "image": "images/snowysummit.jpg",
+        "description": "A strenuous hike to a snowy summit with panoramic views."
+    } ,
+    {
+        "name": "Chill Breeze Trail",
+        "length": "3.2 miles",
+        "difficulty": "Easy",
+        "location": "Nova Scotia, Canada",
+        "image": "images/chillbreeze.jpg",
+        "description": "A relaxing trail with gentle breezes and snowy scenery."
+    },
+    {
+        "name": "Snowy Pines Loop",
+        "length": "2.9 miles",
+        "difficulty": "Moderate",
+        "location": "Quebec, Canada",
+        "image": "images/snowypines.jpg",
+        "description": "A loop trail through snow-covered pine forests."
+    },
+    {
+        "name": "Glacial Trail",
+        "length": "4.8 miles",
+        "difficulty": "Hard",
+        "location": "Yukon, Canada",
+        "image": "images/glacial.jpg",
+        "description": "A rugged trail with views of ancient glaciers."
+    }
+]

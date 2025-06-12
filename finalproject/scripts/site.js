@@ -1,3 +1,27 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.querySelector('.modal');
+  const openModalBtn = document.querySelector('.open-modal-btn');
+  const closeModalBtn = document.querySelector('.close-btn');
+
+  openModalBtn.addEventListener('click', () => {
+    modal.style.display = 'block';
+  });
+
+  closeModalBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+});
+
+
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("currentyear").textContent = new Date().getFullYear();
   document.getElementById("lastModified").textContent = `Last modified: ${document.lastModified}`;
